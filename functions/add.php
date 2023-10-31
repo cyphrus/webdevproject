@@ -13,19 +13,19 @@
 
                 if(empty($code) || empty($name)) {
                     if(empty($code)) {
-                        echo "<font color='red'>Subject code field is empty.</font><br/>";
+                        echo "<p style='color: red; font-size: 1.3em;'>Subject code field is empty.</p>";
                     }
                     if(empty($name)) {
-                        echo "<font color='red'>Subject name field is empty.</font><br/>";
+                        echo "<p style='color: red; font-size: 1.3em;'>Subject name field is empty.</p>";
                     }
 
-                    echo "<br/><a href='javascript:self.history.back();'>Go Back</a>";
+                    echo "<a href='javascript:self.history.back();' style='color: blue; font-size: 1.3em;'>Go Back</a>";
                 }
                 else {
                     $result = mysqli_query($dbc, "INSERT INTO tblsubjects(Subject_Code, Subject_Name) VALUES('$code','$name')");
 
-                    echo "<font color='green'>Data added successfully.</font>";
-                    echo "<br/><a href='../index.php'>View Result</a>";
+                    echo "<p style='color: green; font-size: 1.5em;'>Data added successfully!</p>";
+                    echo "<a href='../index.php' style='color: blue; font-size: 1.3em;'>View Results</a>";
                 }
             }
         ?>
