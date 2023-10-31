@@ -1,5 +1,5 @@
 <?php
-    include_once("dbConnection/mysqlconfig_connection.php");
+    include_once("dbconnection/mysqlconfig_connection.php");
     include_once("functions/fetch.php");
 ?>
 <!DOCTYPE html>
