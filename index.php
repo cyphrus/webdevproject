@@ -29,6 +29,6 @@
                         <a href=\"functions/delete.php?id=$res[Subject_ID]\"
                         onClick=\"return confirm('Are you sure you want to delete?'\"Delete</a></td>";
             }
-        </table>
-    </body>
+    </table>
+</body>
 </html>
