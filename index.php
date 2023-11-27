@@ -37,6 +37,7 @@
             }
         ?>
     </table><br/>
-    <a href="forms/addform.php">ADD SUBJECT</a>
+    <a href="forms/addform.php">ADD SUBJECT</a><br/>
+    <a href="forms/addsyllabusform.php">ADD SYLLABUS</a>
 </body>
 </html>
