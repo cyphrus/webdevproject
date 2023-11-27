@@ -24,8 +24,8 @@
             else {
                 $result = mysqli_query($dbc, "INSERT INTO tblsyllabus(syllabus_code, syllabus_author, Subject_ID) VALUES('$code', '$author', '$subject')");
 
-                echo "<font color='green'>Data added successfully.</font>";
-                echo "<br/><a href ='../index.php'>View Result</a>";
+                echo "<p style='color: green; font-size: 1.5em;'>Data added successfully!</p>";
+                echo "<a href='../index.php' style='color: blue; font-size: 1.3em;'>View Results</a>";
             }
         }
 
