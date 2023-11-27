@@ -5,7 +5,7 @@
     <body>
         <?php
 
-        include_once("../dbConnection/mysqlconfig_connncetion.php");
+        include_once("../dbConnection/mysqlconfig_connection.php");
 
         if(isset($_POST['Submit'])){
             $code = $_POST['code'];
@@ -25,7 +25,7 @@
                 $result = mysqli_query($dbc, "INSERT INTO tblsyllabus(syllabus_code, syllabus_author, Subject_ID) VALUES('$code', '$author', '$subject')");
                 
                 echo "<font color='green'>Data added successfully.</font>";
-                echo "<br/><a href ='../index.php>View Result</a>'";
+                echo "<br/><a href ='../index.php'>View Result</a>";
             }
         }
 
